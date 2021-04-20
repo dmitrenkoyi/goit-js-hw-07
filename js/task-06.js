@@ -6,7 +6,8 @@ function onInputBlur(event) {
     const currentValue = event.currentTarget.value
     const dateLength = parseInt(inputEl.getAttribute('data-length'));
     
-    if (currentValue.length === dateLength) {
+  if (currentValue.length === dateLength) {
+      inputEl.classList.remove("invalid")
         inputEl.classList.add("valid");
 
   } else {
